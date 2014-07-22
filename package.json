@@ -1,6 +1,6 @@
 {
   "name": "hubot-friday13th",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Hubot script to display the next friday the 13th.",
   "main": "index.js",
   "scripts": {
