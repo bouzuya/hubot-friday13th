@@ -15,7 +15,8 @@
 #
 module.exports = (robot) ->
   friday = require '../friday'
+  ordinal = require '../ordinal'
 
   robot.respond /friday(\s+(\d+))?$/i, (res) ->
     day = parseInt(res.match[2] ? '13', 10)
-    res.send friday(day)
+    res.send "the next friday the #{ordinal(day)} is #{friday(day)}"
